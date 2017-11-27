@@ -35,6 +35,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
   });
 // Start the API server
+// after latest build
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
